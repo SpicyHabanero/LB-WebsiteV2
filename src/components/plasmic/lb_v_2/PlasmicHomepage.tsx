@@ -62,12 +62,12 @@ import { useScreenVariants as useScreenVariantszqoYg1BSzs5U } from "./PlasmicGlo
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
+import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: me8j5hgiwsuceYtrXTSFkj/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: PcdRufHrje6g/css
 
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: aO9uawZq_T88/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: -teSAeVyFMKP/icon
-import image8NXzyd5EFcuIv from "./images/image8.png"; // plasmic-import: NXzyd5eFcuIV/picture
 import logo031Svg296FOkvJdFd from "./images/logo031Svg2.svg"; // plasmic-import: _96_FOkvJdFd/picture
 import logo031SvgCnJ8Hcq729Cq from "./images/logo031Svg.svg"; // plasmic-import: CnJ8hcq729CQ/picture
 import image57NTfM34LiwI from "./images/image5.svg"; // plasmic-import: 7NTfM34liwI_/picture
@@ -93,7 +93,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   verticalLayout?: Flex__<"div">;
-  circle?: Flex__<"div">;
   topRightDesignPosition?: Flex__<"div">;
   topRightDesign?: Flex__<"div">;
   heroMessage?: Flex__<"div">;
@@ -147,6 +146,7 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
+            plasmic_antd_5_hostless_css.plasmic_tokens,
             sty.root
           )}
         >
@@ -155,37 +155,6 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.verticalLayout}
             className={classNames(projectcss.all, sty.verticalLayout)}
           >
-            <div
-              data-plasmic-name={"circle"}
-              data-plasmic-override={overrides.circle}
-              className={classNames(projectcss.all, sty.circle)}
-            >
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__v5Tj)}
-                displayHeight={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "135px"
-                    : "451px"
-                }
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "202px"
-                    : "235px"
-                }
-                loading={"lazy"}
-                src={{
-                  src: image8NXzyd5EFcuIv,
-                  fullWidth: 988,
-                  fullHeight: 1372,
-                  aspectRatio: undefined
-                }}
-              />
-            </div>
             <div
               data-plasmic-name={"topRightDesignPosition"}
               data-plasmic-override={overrides.topRightDesignPosition}
@@ -270,43 +239,200 @@ function PlasmicHomepage__RenderFunc(props: {
                     {"Join Waitlist"}
                   </div>
                 </Button>
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : false
+                ) ? (
+                  <Button
+                    className={classNames("__wab_instance", sty.button__oW6Fe)}
+                    link={`/https/www.loanblocks.ai`}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__mRr1M
+                      )}
+                    >
+                      {"Join Waitlist"}
+                    </div>
+                  </Button>
+                ) : null}
               </div>
             </div>
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__q7Tc)}
-              displayHeight={"50px"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "16.43%"
-                  : "100%"
-              }
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "100%"
-                  : "305px"
-              }
-              loading={"lazy"}
-              src={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? {
-                      src: logo031SvgCnJ8Hcq729Cq,
-                      fullWidth: 186,
-                      fullHeight: 22,
-                      aspectRatio: 8.454545
-                    }
-                  : {
-                      src: logo031Svg296FOkvJdFd,
-                      fullWidth: 186,
-                      fullHeight: 22,
-                      aspectRatio: 8.454545
-                    }
-              }
-            />
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__ebKm9)}
+            >
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__q7Tc)}
+                displayHeight={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "35px"
+                    : "50px"
+                }
+                displayMaxHeight={"none"}
+                displayMaxWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "17.15%"
+                    : "100%"
+                }
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "100%"
+                    : "189px"
+                }
+                loading={"lazy"}
+                src={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? {
+                        src: logo031SvgCnJ8Hcq729Cq,
+                        fullWidth: 186,
+                        fullHeight: 22,
+                        aspectRatio: 8.454545
+                      }
+                    : {
+                        src: logo031Svg296FOkvJdFd,
+                        fullWidth: 186,
+                        fullHeight: 22,
+                        aspectRatio: 8.454545
+                      }
+                }
+              />
 
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__gt61Z)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__jqlr)}
+                >
+                  <Button
+                    className={classNames("__wab_instance", sty.button__fSL0)}
+                    color={"clear"}
+                    endIcon={
+                      <Icon2Icon
+                        className={classNames(projectcss.all, sty.svg__tnHc)}
+                        role={"img"}
+                      />
+                    }
+                    startIcon={
+                      <IconIcon
+                        className={classNames(projectcss.all, sty.svg___1Yz3B)}
+                        role={"img"}
+                      />
+                    }
+                    submitsForm={true}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ouLz0
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "Product"
+                        : "Product"}
+                    </div>
+                  </Button>
+                  <Button
+                    className={classNames("__wab_instance", sty.button___3PeLs)}
+                    color={"clear"}
+                    endIcon={
+                      <Icon2Icon
+                        className={classNames(projectcss.all, sty.svg__bl9Wn)}
+                        role={"img"}
+                      />
+                    }
+                    startIcon={
+                      <IconIcon
+                        className={classNames(projectcss.all, sty.svg__dQql)}
+                        role={"img"}
+                      />
+                    }
+                    submitsForm={true}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__gfeii
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "Solutions"
+                        : "Solutions"}
+                    </div>
+                  </Button>
+                  <Button
+                    className={classNames("__wab_instance", sty.button__fXBx)}
+                    color={"clear"}
+                    endIcon={
+                      <Icon2Icon
+                        className={classNames(projectcss.all, sty.svg__amS3)}
+                        role={"img"}
+                      />
+                    }
+                    startIcon={
+                      <IconIcon
+                        className={classNames(projectcss.all, sty.svg__nWciL)}
+                        role={"img"}
+                      />
+                    }
+                    submitsForm={true}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__iOfxR
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "About Us"
+                        : "Customers"}
+                    </div>
+                  </Button>
+                  <Button
+                    className={classNames("__wab_instance", sty.button__adwmB)}
+                    endIcon={
+                      <Icon2Icon
+                        className={classNames(projectcss.all, sty.svg__azeIv)}
+                        role={"img"}
+                      />
+                    }
+                    startIcon={
+                      <IconIcon
+                        className={classNames(projectcss.all, sty.svg__spQfp)}
+                        role={"img"}
+                      />
+                    }
+                    submitsForm={true}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__yzRra
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "Sign Up"
+                        : "Sign up"}
+                    </div>
+                  </Button>
+                </Stack__>
+              </Stack__>
+            </Stack__>
             <Stack__
               as={"div"}
               data-plasmic-name={"heroMessage"}
@@ -376,7 +502,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             className={
                               "plasmic_default__all plasmic_default__span"
                             }
-                            style={{ color: "#000000", fontWeight: 700 }}
+                            style={{ color: "#40AA71", fontWeight: 700 }}
                           >
                             {"faster"}
                           </span>
@@ -407,7 +533,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             className={
                               "plasmic_default__all plasmic_default__span"
                             }
-                            style={{ color: "#000000", fontWeight: 700 }}
+                            style={{ color: "#40AA71", fontWeight: 700 }}
                           >
                             {"faster"}
                           </span>
@@ -434,6 +560,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         "__wab_instance",
                         sty.button___1C4Ib
                       )}
+                      link={`/https/www.loanblocks.ai`}
                     >
                       <div
                         className={classNames(
@@ -462,7 +589,22 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {hasVariant(globalVariants, "screen", "mobileOnly") ? (
-                  "Arrangers are structuring more complex loans, hindering efficient administrative work."
+                  <React.Fragment>
+                    <React.Fragment>
+                      {"Deal arrangers are structuring "}
+                    </React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ color: "#000000" }}
+                    >
+                      {"more"}
+                    </span>
+                    <React.Fragment>
+                      {
+                        " complex loans, hindering efficient administrative work."
+                      }
+                    </React.Fragment>
+                  </React.Fragment>
                 ) : (
                   <React.Fragment>
                     <span
@@ -470,7 +612,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       style={{ color: "#000000" }}
                     >
                       {
-                        "Arrangers are structuring more complex loans, hindering efficient administrative work."
+                        "Deal arrangers are structuring complex loans, hindering efficient administrative work."
                       }
                     </span>
                   </React.Fragment>
@@ -566,9 +708,101 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__eyIIe
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "\nAdding more headcount?\n\nEnable your employees to be more productive."
-                      : "Adding more headcount?\n\nEnable your employees to be more productive."}
+                    {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 600 }}
+                        >
+                          {"Onboarding new talent?"}
+                        </span>
+                        <React.Fragment>{"\n\n\n"}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#40AA71", fontWeight: 600 }}
+                        >
+                          {"Maximize productivity"}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 600 }}
+                        >
+                          {" "}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 400, color: "#000000" }}
+                        >
+                          {"by decreasing team's learning"}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 400 }}
+                        >
+                          {" curve."}
+                        </span>
+                      </React.Fragment>
+                    ) : (
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 600 }}
+                        >
+                          {"Onboarding new talent?"}
+                        </span>
+                        <React.Fragment>{"\n\n"}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#40AA71", fontWeight: 600 }}
+                        >
+                          {"Maximize productivity"}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 600 }}
+                        >
+                          {" "}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 400, color: "#000000" }}
+                        >
+                          {"by decreasing team's learning"}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 400 }}
+                        >
+                          {" curve."}
+                        </span>
+                      </React.Fragment>
+                    )}
                   </div>
                   <PlasmicLink__
                     className={classNames(
@@ -577,8 +811,9 @@ function PlasmicHomepage__RenderFunc(props: {
                       projectcss.__wab_text,
                       sty.link__u93IO
                     )}
-                    href={"https://www.plasmic.app/"}
+                    href={"https://www.loanblocks.ai/"}
                     platform={"react"}
+                    target={undefined}
                   >
                     {"Learn more"}
                   </PlasmicLink__>
@@ -655,9 +890,65 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__qFjfX
                     )}
                   >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "\nHiring offshore talent? \n\nMaintain onshore employees and quality control."
-                      : "Hiring offshore talent?\n\nMaintain onshore employees and save on quality control."}
+                    {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 600 }}
+                        >
+                          {"Outsourcing to vendors?"}
+                        </span>
+                        <React.Fragment>{"\n\n\n"}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#40AA71", fontWeight: 600 }}
+                        >
+                          {"Save time & energy"}
+                        </span>
+                        <React.Fragment> </React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#000000" }}
+                        >
+                          {"by increasing quality control."}
+                        </span>
+                      </React.Fragment>
+                    ) : (
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 600 }}
+                        >
+                          {"Outsourcing to vendors?"}
+                        </span>
+                        <React.Fragment>{"\n\n"}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#40AA71", fontWeight: 600 }}
+                        >
+                          {"Save time & energy"}
+                        </span>
+                        <React.Fragment> </React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#000000" }}
+                        >
+                          {"by increasing quality control."}
+                        </span>
+                      </React.Fragment>
+                    )}
                   </div>
                   <PlasmicLink__
                     className={classNames(
@@ -666,7 +957,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       projectcss.__wab_text,
                       sty.link__q6ZUn
                     )}
-                    href={"https://www.plasmic.app/"}
+                    href={"https://www.loanblocks.ai/"}
                     platform={"react"}
                   >
                     {"Learn more"}
@@ -740,9 +1031,101 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__wxNtK
                     )}
                   >
-                    {
-                      "Legacy software?\n\nIntegrate compliant AI to enhance existing systems. "
-                    }
+                    {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 600 }}
+                        >
+                          {"Lengthy workflows?"}
+                        </span>
+                        <React.Fragment>{"\n\n\n"}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#40AA71", fontWeight: 600 }}
+                        >
+                          {"Ensure process"}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#40AA71" }}
+                        >
+                          {" "}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#40AA71", fontWeight: 600 }}
+                        >
+                          {"reliability"}
+                        </span>
+                        <React.Fragment> </React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#000000" }}
+                        >
+                          {"by implement compliant AI."}
+                        </span>
+                      </React.Fragment>
+                    ) : (
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 600 }}
+                        >
+                          {"Lengthy workflows?"}
+                        </span>
+                        <React.Fragment>{"\n\n"}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#40AA71", fontWeight: 600 }}
+                        >
+                          {"Ensure process"}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#40AA71" }}
+                        >
+                          {" "}
+                        </span>
+                        <React.Fragment>{""}</React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#40AA71", fontWeight: 600 }}
+                        >
+                          {"reliability"}
+                        </span>
+                        <React.Fragment> </React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ color: "#000000" }}
+                        >
+                          {"by implement compliant AI."}
+                        </span>
+                      </React.Fragment>
+                    )}
                   </div>
                   <PlasmicLink__
                     className={classNames(
@@ -751,7 +1134,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       projectcss.__wab_text,
                       sty.link___8UkyA
                     )}
-                    href={"https://www.plasmic.app/"}
+                    href={"https://www.loanblocks.ai/"}
                     platform={"react"}
                   >
                     {"Learn more"}
@@ -826,7 +1209,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={"plasmic_default__all plasmic_default__span"}
                         style={{ color: "#40AA71" }}
                       >
-                        {"legal"}
+                        {"credit"}
                       </span>
                       <React.Fragment>{""}</React.Fragment>
                       <span
@@ -859,28 +1242,29 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text__ymPwN
                   )}
                 >
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#000000" }}
-                    >
-                      {"Analyze complex credit "}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#212121" }}
-                    >
-                      {"documents"}
-                    </span>
-                    <React.Fragment>{""}</React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ color: "#000000" }}
-                    >
-                      {" faster, cheaper, and improve accuracy."}
-                    </span>
-                  </React.Fragment>
+                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#000000" }}
+                      >
+                        {
+                          "Analyze complex credit documentation faster, cheaper, while improving accuracy."
+                        }
+                      </span>
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#000000" }}
+                      >
+                        {
+                          "Analyze complex credit documentation faster, cheaper, while improving accuracy."
+                        }
+                      </span>
+                    </React.Fragment>
+                  )}
                 </div>
               </section>
               <Stack__
@@ -930,18 +1314,46 @@ function PlasmicHomepage__RenderFunc(props: {
                   />
 
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__mjoS3
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox__fJ1Zw)}
                   >
-                    {
-                      "Finance professionals, streamline legal contract processing with our AI."
-                    }
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__mjoS3
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "Finance professionals, streamline credit agreement processing with our AI."
+                        : "Finance professionals, streamline legal contract processing with our AI."}
+                    </div>
                   </div>
                   <Button
                     className={classNames("__wab_instance", sty.button__mjGNx)}
+                    link={`/https/www.loanblocks.ai`}
+                    onClick={async event => {
+                      const $steps = {};
+
+                      $steps["runCode"] = true
+                        ? (() => {
+                            const actionArgs = {
+                              customFunction: async () => {
+                                return undefined;
+                              }
+                            };
+                            return (({ customFunction }) => {
+                              return customFunction();
+                            })?.apply(null, [actionArgs]);
+                          })()
+                        : undefined;
+                      if (
+                        $steps["runCode"] != null &&
+                        typeof $steps["runCode"] === "object" &&
+                        typeof $steps["runCode"].then === "function"
+                      ) {
+                        $steps["runCode"] = await $steps["runCode"];
+                      }
+                    }}
                   >
                     <div
                       className={classNames(
@@ -953,6 +1365,15 @@ function PlasmicHomepage__RenderFunc(props: {
                       {"Join Waitlist"}
                     </div>
                   </Button>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__v5MO
+                    )}
+                  >
+                    {"~ Growing user waitlist"}
+                  </div>
                 </div>
                 <div className={classNames(projectcss.all, sty.column___3CYdv)}>
                   <div
@@ -1016,7 +1437,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(sty.img__hZIt)}
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? "57px"
+                            ? "76px"
                             : "218px"
                         }
                         displayMaxHeight={"none"}
@@ -1025,7 +1446,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         displayMinWidth={"0"}
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? "113px"
+                            ? "105px"
                             : "370px"
                         }
                         loading={"lazy"}
@@ -1045,7 +1466,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(sty.img__k2NyK)}
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? "57px"
+                            ? "76px"
                             : "218px"
                         }
                         displayMaxHeight={"none"}
@@ -1074,7 +1495,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(sty.img___7Jd5Z)}
                         displayHeight={
                           hasVariant(globalVariants, "screen", "mobileOnly")
-                            ? "57px"
+                            ? "76px"
                             : "218px"
                         }
                         displayMaxHeight={"none"}
@@ -1166,7 +1587,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           </span>
                           <React.Fragment>
                             {
-                              "\n\nStreamline routine tasks and reduce manual effort."
+                              "\n\n\nStreamline routine tasks and reduce manual effort."
                             }
                           </React.Fragment>
                         </React.Fragment>
@@ -1238,7 +1659,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             style={{ fontWeight: 700 }}
                           >
                             {
-                              "Focus on high-value while AI handles repetitive tasks"
+                              "Focus on high-value, let AI handle repetitive tasks."
                             }
                           </span>
                           <React.Fragment>
@@ -1279,7 +1700,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         displayWidth={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? "68px"
-                            : "299px"
+                            : "200px"
                         }
                         loading={"lazy"}
                         src={
@@ -1399,7 +1820,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         platform={"react"}
                       >
                         {hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "Pricing"
+                          ? "Customer"
                           : "Customer"}
                       </PlasmicLink__>
                       <PlasmicLink__
@@ -1413,7 +1834,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         platform={"react"}
                       >
                         {hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "Customer"
+                          ? "Product"
                           : "Product"}
                       </PlasmicLink__>
                       <PlasmicLink__
@@ -1427,7 +1848,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         platform={"react"}
                       >
                         {hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "Product"
+                          ? "Pricing"
                           : "Pricing"}
                       </PlasmicLink__>
                     </div>
@@ -1484,20 +1905,18 @@ function PlasmicHomepage__RenderFunc(props: {
                       </PlasmicLink__>
                     </div>
                   </Stack__>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__sHl9N
+                    )}
+                  >
+                    {"\u00a92024 Loanblocks Inc. All right reserved"}
+                  </div>
                 </div>
               </Stack__>
             </div>
-          </div>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__yY1Na
-            )}
-          >
-            {hasVariant(globalVariants, "screen", "mobileOnly")
-              ? "\n\n\n\n\n\n\n\n\u00a92024 LOANBLOCKS INC. All Right Reserved"
-              : "\n\u00a92024 LOANBLOCKS INC. All right reserved"}
           </div>
         </div>
       </div>
@@ -1509,7 +1928,6 @@ const PlasmicDescendants = {
   root: [
     "root",
     "verticalLayout",
-    "circle",
     "topRightDesignPosition",
     "topRightDesign",
     "heroMessage",
@@ -1521,7 +1939,6 @@ const PlasmicDescendants = {
   ],
   verticalLayout: [
     "verticalLayout",
-    "circle",
     "topRightDesignPosition",
     "topRightDesign",
     "heroMessage",
@@ -1531,7 +1948,6 @@ const PlasmicDescendants = {
     "section",
     "offices"
   ],
-  circle: ["circle"],
   topRightDesignPosition: ["topRightDesignPosition", "topRightDesign"],
   topRightDesign: ["topRightDesign"],
   heroMessage: ["heroMessage"],
@@ -1547,7 +1963,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   verticalLayout: "div";
-  circle: "div";
   topRightDesignPosition: "div";
   topRightDesign: "div";
   heroMessage: "div";
@@ -1619,7 +2034,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     verticalLayout: makeNodeComponent("verticalLayout"),
-    circle: makeNodeComponent("circle"),
     topRightDesignPosition: makeNodeComponent("topRightDesignPosition"),
     topRightDesign: makeNodeComponent("topRightDesign"),
     heroMessage: makeNodeComponent("heroMessage"),
