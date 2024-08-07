@@ -1484,20 +1484,20 @@ function PlasmicHomepage__RenderFunc(props: {
                       </PlasmicLink__>
                     </div>
                   </Stack__>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yY1Na
-                    )}
-                  >
-                    {hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "\n\n\n\n\n\n\n\n\u00a92024 LOANBLOCKS INC. All Right Reserved"
-                      : "\n\n\u00a92024 LOANBLOCKS INC. All right reserved"}
-                  </div>
                 </div>
               </Stack__>
             </div>
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__yY1Na
+            )}
+          >
+            {hasVariant(globalVariants, "screen", "mobileOnly")
+              ? "\n\n\n\n\n\n\n\n\u00a92024 LOANBLOCKS INC. All Right Reserved"
+              : "\n\u00a92024 LOANBLOCKS INC. All right reserved"}
           </div>
         </div>
       </div>
